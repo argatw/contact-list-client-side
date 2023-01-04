@@ -1,0 +1,16 @@
+<p>contact-list works!</p>
+
+<p>Contact-list:</p>
+<div *ngFor="let u of users; let i=index">
+    <table>
+        <tr>
+            <td>{{ u.name }}</td>
+            <td>{{ u.email }}</td>
+            <td>{{ u.tel }}</td>
+            <!-- <td><button (click)="edit(i)">EDIT</button></td> -->
+            <td><button (click)="removeContactFromList(i)">DELETE</button></td>
+        </tr>
+    </table>
+    <!-- [<code>{{ o.key }}</code>] - <span>{{ o.value.name }}</span> -->
+</div>
+
